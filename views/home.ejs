@@ -1,20 +1,21 @@
 <%- include("partials/header");-%>
 
 <h1>Home</h1>
-<p><%= loremIpsum1%></p>
+<p style="display: block;"><%= loremIpsum1%></p>
 <% allPosts.forEach(function(element){ %>
    <h1><%= element.title %></h1>
    <% if(element.content.length>100){%>
-   <p><%= element.content.slice(0,100)%>
+   <p id="p"><%= element.content.slice(0,100)%>
      <a class="readMore" href="/posts/<%=element.title%>" >
         Read More</a></p>
     <% }else{%>
          <p><%= element.content%>
+           <br>
 
 <%}}); %>
 
 <a href="/compose" id="btnCompose">
-  <button class="btn btn-primary" name="button">
+  <button class="btn btn-primary" style="margin-top: 15px;" name="button">
     Compose
   </button>
 </a>
