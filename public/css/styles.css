@@ -1,0 +1,49 @@
+.container-fluid {
+    padding-top: 70px;
+    padding-bottom: 70px;
+}
+.navbar {
+    padding-top: 15px;
+    padding-bottom: 15px;
+    border: 0;
+    border-radius: 0;
+    margin-bottom: 0;
+    font-size: 12px;
+    letter-spacing: 5px;
+}
+.navbar-nav  li a:hover {
+    color: #1abc9c !important;
+}
+
+.footer-padding {
+	padding-bottom: 60px;
+}
+
+.footer {
+
+	text-align: center;
+	bottom: 0;
+  margin-top: 200px;
+	height: 60px;
+	background-color: #1abc9c;
+}
+
+#footer {
+	padding-top: 25px;
+	font-size: 12px;
+  width: 100%;
+  color: #fff;
+}
+#titleInput{
+  width: 90%;
+}
+#postInput{
+
+  display: block;
+}
+#publish{
+  margin-top: 0;
+}
+#btnCompose{
+  margin-top: 25px;
+}
