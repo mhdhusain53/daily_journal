@@ -4,10 +4,14 @@
 <p><%= loremIpsum1%></p>
 <% allPosts.forEach(function(element){ %>
    <h1><%= element.title %></h1>
+   <% if(element.content.length>100){%>
    <p><%= element.content.slice(0,100)%>
      <a class="readMore" href="/posts/<%=element.title%>" >
         Read More</a></p>
-<%}); %>
+    <% }else{%>
+         <p><%= element.content%>
+
+<%}}); %>
 
 <a href="/compose" id="btnCompose">
   <button class="btn btn-primary" name="button">
