@@ -41,6 +41,12 @@ app.post("/compose",function(req,res){
   res.redirect("/");
 });
 
+app.get("/delete",function(req,res){
+  while(posts.length>0){
+    posts.pop()
+  }
+  res.redirect("/");
+});
 
 app.get("/posts/:part",function(req,res){
   posts.forEach(function(elent){
